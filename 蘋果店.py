@@ -11,7 +11,7 @@ while True:
     print("  2.進貨")
     print("  3.出貨/交易")
     print("  4.離開系統")
-    function=int(input("請輸入欲使用功能選項：")
+    function=int(input("請輸入欲使用功能選項："))
     print("----------------------------------")
    
     if function==1:
@@ -19,7 +19,7 @@ while True:
         applePrice=int(input("單價"))
         print("目前庫存",myApple,"顆 ")
         print("一顆蘋果",applePrice,"元")
-    elif function==2: sellRecord.
+    elif function==2:
         applein=int(input("進貨蘋果數量:"))
         myApple=myApple+applein
         print("進貨",applein,"顆")
@@ -30,37 +30,36 @@ while True:
         myApple=myApple-appleOut
         print("應收金額:",total,"元")
         print("目前庫存:",myApple,"顆")
-        sellRecord.append(sellRecord)
+        sellRecord.append(appleOut)
         print("\n目前交易紀錄:")
-        for i in range(len(n)
-            print(input,"賣出",sellRecord[myApple],"顆",appleOut*applePrice,"元")
-elif function==4:
-    print("感謝使用本系統")
-    break
-else:
-    print("請輸入功能1-4")
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        for i in range(len(sellRecord)):
+            print(i+1,"賣出",sellRecord[i],"顆",sellRecord[i]*applePrice,"元")
     elif function==4:
+        print("感謝使用本系統")
         break
+    else:
+        print("請輸入功能1-4")
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+        
         
 
 
